@@ -162,7 +162,7 @@ with st.form(key="add_form"):
             #recebe o diretorio da pasta que possui os pdf´s
             options = webdriver.EdgeOptions()
             options.add_argument("--headless")
-            driver = Edge()
+            driver = webdriver.Edge()
             # Maximiza a janela do navegador
             driver.maximize_window()
 
