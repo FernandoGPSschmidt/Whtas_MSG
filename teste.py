@@ -14,7 +14,7 @@ import warnings
 import datetime as dt
 import urllib.parse
 from selenium.common.exceptions import TimeoutException  # Corrigido: importando TimeoutException
-
+from selenium.webdriver.edge.webdriver import WebDriver as Edge
 
 
 def count(x):
@@ -162,7 +162,7 @@ with st.form(key="add_form"):
             #recebe o diretorio da pasta que possui os pdf´s
             options = webdriver.EdgeOptions()
             options.add_argument("--headless")
-            driver = webdriver.Edge()
+            driver = Edge()
             # Maximiza a janela do navegador
             driver.maximize_window()
 
