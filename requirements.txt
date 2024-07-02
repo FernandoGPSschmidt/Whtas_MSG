@@ -1,5 +1,5 @@
 streamlit
-selenium
+selenium==3.141.0
 panda
 webdriver_manager
 openpyxl
